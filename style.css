@@ -61,3 +61,32 @@ header >h1 {
     right: -30px;
     text-transform: capitalize;
 }
+
+.result {
+    font-size: 40px;
+    color: white;
+}
+
+.result > p{
+    text-align: center;
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
+}
+
+.choices {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.choice {
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0 25px;
+    padding: 30px;
+    display: inline-block;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: #4b4f57;
+}
