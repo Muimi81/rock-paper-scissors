@@ -1,4 +1,4 @@
-/*stylesheet for*/
+/*stylesheet for Rock Papper Scissors Game*/
 
 /*Google Font - DM Sans Import */
 
@@ -24,5 +24,17 @@ header {
 header >h1 {
     color: #24272E;
     text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 46px;
+    padding: 15px 20px;
     font-family: "DM Sans", sans-serif;
 }
