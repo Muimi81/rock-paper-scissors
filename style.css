@@ -53,6 +53,7 @@ header >h1 {
     top: 30px;
     left: -25px;
     text-transform: capitalize;
+    font-weight: bold;
 }
 
 #computer-label {
@@ -60,6 +61,7 @@ header >h1 {
     top: 30px;
     right: -30px;
     text-transform: capitalize;
+    font-weight: bold;
 }
 
 .result {
@@ -74,7 +76,7 @@ header >h1 {
 }
 
 .choices {
-    margin: 50px 0;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -84,9 +86,20 @@ header >h1 {
     margin: 0 25px;
     padding: 30px;
     display: inline-block;
+    transition: all 0.3s ease;
 }
 
 .choice:hover {
     cursor: pointer;
     background: #4b4f57;
+}
+
+#action-message {
+    text-align: center;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
