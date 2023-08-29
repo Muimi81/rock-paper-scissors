@@ -19,21 +19,21 @@ function getComputerChoice (){
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice){
-        case "rock paper":
-        case "paper rock":
-        case "scissors paper":
+        case "rockpaper":
+        case "paperrock":
+        case "scissorspaper":
             console.log("USER WINS.");
             break;
 
-        case "rock paper":
-        case "paper scissors":
-        case "scissors rock":
+        case "rockpaper":
+        case "paperscissors":
+        case "scissorsrock":
             console.log ("USER LOSES.");
             break;
         
-        case "rock rock":
-        case "paper paper":
-        case "scissors scissors":
+        case "rockrock":
+        case "paperpaper":
+        case "scissorsscissors":
             console.log ("IT'S A DRAW!");
             break;
     }
