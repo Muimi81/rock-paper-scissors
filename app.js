@@ -12,13 +12,31 @@ const scissors_div = document.getElementById ("scissors");
 
 function getComputerChoice (){
     const choices = ['rock', 'paper', 'scissors'];
-    console.log(Math.random()*3);
+    const randomNumber = Math.floor(Math.random()*3);
+    return choices[randomNumber];
 }
 
-getComputerChoice();
-
 function game(userChoice) {
+    const computerChoice = getComputerChoice();
+    switch (userChoice + computerChoice){
+        case "rock paper":
+        case "paper rock":
+        case "scissors paper":
+            console.log("USER WINS.");
+            break;
 
+        case "rock paper":
+        case "paper scissors":
+        case "scissors rock":
+            console.log ("USER LOSES.");
+            break;
+        
+        case "rock rock":
+        case "paper paper":
+        case "scissors scissors":
+            console.log ("IT'S A DRAW!");
+            break;
+    }
 }
 
 function main () {
