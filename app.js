@@ -45,7 +45,7 @@ function draw(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     const smallUserWord = "user".fontsize(3).sup();
     const smallCompWord = "comp".fontsize(3).sup();
-    result_p.innerHTML = `${convertToSentenceCase(userChoice)} ${smallUserWord} equals to the ${convertToSentenceCase(computerScore)} ${smallCompWord} . It's a draw.`;
+    result_p.innerHTML = `${convertToSentenceCase(userChoice)} ${smallUserWord} equals to ${convertToSentenceCase(computerScore)} ${smallCompWord} . It's a draw.`;
 }
 
 function game(userChoice) {
