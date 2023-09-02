@@ -5,7 +5,7 @@ let computerScore = 0;
 const userScore_span = document.getElementById ("user-score");
 const computerScore_span = document.getElementById ("computer-score");
 const scoreBoard_div = document.querySelector (".score-board");
-const result_div = document.querySelector (".result");
+const result_p = document.querySelector (".result > p");
 const rock_div = document.getElementById ("rock");
 const paper_div = document.getElementById ("paper");
 const scissors_div = document.getElementById ("scissors");
@@ -16,11 +16,19 @@ function getComputerChoice (){
     return choices[randomNumber];
 }
 
+function convertToSentenceCase (letter) {
+    if (letter === "paper") return "Paper";
+    if (letter === "rock") return "Rock";
+    return "Scissors";
+}
+
 function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = userChoice + " beats " + computerChoice + ". You win!";
+    const smallUserWord = "user".fontsize (3).sup();
+    const smallCompWord = "comp".fontsize(3).sup();
+    result_p.innerHTML = `${convertToSentenceCase(userChoice)} ${smallUserWord} beats ${convertToSentenceCase(computerChoice)} ${smallCompWord} . You win!`;
 }
 
 function lose() {
