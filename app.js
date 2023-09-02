@@ -31,11 +31,16 @@ function win(userChoice, computerChoice) {
     result_p.innerHTML = `${convertToSentenceCase(userChoice)} ${smallUserWord} beats ${convertToSentenceCase(computerChoice)} ${smallCompWord} . You win!`;
 }
 
-function lose() {
-    console.log("USER LOST");
+function lose(userChoice, computerChoice) {
+    computerScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    const smallUserWord = "user".fontsize(3).sup();
+    const smallCompWord = "comp".fontsize(3).sup();
+    result_p.innerHTML = `${convertToSentenceCase(userChoice)} ${smallUserWord} loses to ${convertToSentenceCase(computerChoice)} ${smallCompWord} . You lost.`;
 }
 
-function draw() {
+function draw(userChoice, computerChoice) {
     console.log("DRAW");
 }
 
